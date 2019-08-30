@@ -1,0 +1,372 @@
+/* Reglas */
+/* selectores */
+/* declaraciones */
+/* propiedades */
+/* valores */
+
+/* selector de etiqueta header - section - article  */
+
+/* selector descendente */
+/* body header div nav ol li a { } */
+
+/* selector de clase con punto ---- html class=""--- css .class */
+/* selector con id  ----html id  ----css #  en la actualidad no son muy utilizados. preferibelemente class*/
+
+body{
+
+     /* busca arial y si no la encuentra, la siguiente y asi */
+     font-family: Arial, Helvetica, sans-serif;
+     margin:0;
+}
+
+h1,h2,h3,h4,h5,h6{
+     font-family: 'Fijalla One', sams-serif;
+
+     /* grosos de la fuente */
+     font-weight: normal;
+
+     /* font-style: italic; Cursiva */
+}
+
+h1{
+
+     /* propiedad para cammbiar alto de linea 1=100%*/
+     line-height: 1.2;
+     /* tamaño de fuente */
+     font-size: 40px;
+     /* espaciado de las letras del texto, de lettra a letra */
+     letter-spacing: -.2px;
+     /* para transformas las letras a mayusculas o otro formato */
+     /* text-transform: uppercase; */
+     /* text decoraccion, subrayar, color y demas */
+     /* text-decoration: dashed; */
+     /* color textos */
+     color: white;
+     /* margin es como un area segura, es el margen seguro del elemento */
+     /* margin es como un reloj que empieza desde arriba derecha abajo izquierd, son los parametros */
+     /* margin auto lo centra, con el disponible a la izquierda y derecha por igual */
+     /* margin: 100px 150px 70px 30px; */
+     margin:0;
+}
+
+h1 strong{
+     /* color del texto */
+     color: #025fff;
+}
+h2{
+      /* color del texto */
+      color: #025fff;
+      text-transform: uppercase;
+      font-family: Arial, Helvetica, sans-serif;
+      /* negrilla */
+      font-weight: bold;
+      font-size: 24px;
+      /* margen de la parte de abajo */
+      margin-bottom: 40px;
+}
+
+.hero{
+     /* pasar tamaño alto al elemento */
+     height: 300px;
+     /* fondo de hero */
+     /* background-image: url('../images/hero.jpg'); */
+     /* color de fondo */
+     background-color: #1b2127;
+     /* tamaño de la imagen de fondo */
+     /* background-size: 500px 300px; */
+     /* cuantas veces se repite o como se repite la imagen de fondo */
+     /* background-repeat: no-repeat; */
+     /* ubicar la imagen en la parte derecha osea el eje x */
+     /* right para que la imagen aparezca desde la derecha */
+     /* background-position-x: right;  */
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+
+}
+.hero-image{
+     object-fit: cover;
+
+}
+.project{
+
+     /* bordes: border-top es arriba, del elemento, parametros tamaño,tipo,estilo */
+     border: 1px solid red;
+     /* bordes redondeados */
+     border-radius: 10px;
+     /* border-top-left-radius: 50px;  */
+     /* padding es como por decir asi el espaciado hacia adentro */
+     padding: 20px;
+     /* margin es como el espaciado hacia afuera del elemento */
+     /* margin:10px; */
+     margin-bottom: 15px;
+     background-color: white;
+     /* como se van organizando los items de este elemento */
+     display: flex;
+     /* combinacion super para elementos en los extremos y alineados */
+     align-items: center;
+     justify-content: space-between;
+
+     
+}
+.project-course{
+     /* el primer para metro es para arriba y abajo y el segundo para los costados */
+     margin: 10px 0;
+}
+.project-date{
+     margin: 10px 0;
+}.project-url{
+     margin: 10px 0;
+}
+.project-description{
+     font-size: 20px;
+}
+.project-title{
+     font-size: 30px;
+     margin-top: 0;
+     margin-bottom: 10px;
+}
+.project strong{
+     font-family: 'Fijalla One', sams-serif;
+     font-size:18px; 
+}
+.project-details{
+     /* le damos un tamaño de ancho al elemento */
+     width: 500px;
+
+}
+.project.imageContainer{
+     /* le damos un tamaño de ancho al elemento */
+     width: 500px;
+}
+.header{
+     /* color del  fondo */
+     background-color: #1b2127;
+     /* color de los textos */
+     color:white;
+     display:flex;
+     /* para utilizar los espacios laterales */
+     justify-content: space-between;
+     /* alinear los items de manera horizontal */
+     align-items: center;
+
+     /* alto del header, para que la mano sirva en todo el largo para un item */
+     height: 70px;
+}
+ol,ul{
+     margin: 0;
+     padding: 0;
+     /* para quitar el estilo de las listas */
+     list-style: none;
+}
+figure{
+     margin: 0;
+}
+.menu{
+     height: inherit;
+}
+.header ol{
+     display: flex;
+     /* inherit solo funciona de padre a hijo */
+     height: inherit;
+}
+.header ol li{
+     height: inherit;
+     
+}
+.header a{
+     /* para pasar el alto de todo el nav y que pueda dar click en todo su valor de alto para ingresar */
+     height: inherit;
+     display:flex;
+     align-items: center;
+     padding: 0 10px;
+}
+
+/* selector descendente de clases*/
+.header a{
+     /* color de los textos */
+     color:white;
+     /* para que no tenga la decoracion de los links */
+     text-decoration: none;
+
+}
+
+.portfolio{
+     /* fondo de color del elemento */
+     background: #fafafa;
+     padding: 20px;
+}
+
+/* box-sizing:border-box  atributos para la caja OJO----------------------*/
+
+.flexbox{
+     /* flex se le aplica al padre  */
+     display: flex;
+     /* flex-direction: column; */
+
+     /* para que al llenarse siga con la siguiente fila abajo y asi sucesivamente */
+     flex-wrap: wrap;
+
+     /* centrar los elementos o que se agrupen a la izquiera o donde queramos, space around e ir probando */
+     /* justify-content: space-around; */
+
+
+     /* alto del flexbox */
+     height: 200px;
+     /* centrar, inicio, final como nosotros lo queramos alinear */
+     /* align-items: initial; */
+     flex-direction: column;
+     justify-content: center;
+}
+.box{
+     /* ancho */
+     width: 50px;
+     /* alto */
+     height: 50px;
+     /* borde */
+     border: 1px solid red;
+     /* margen */
+     /* margin:5px; */
+     /* para ubicar cada elemento */
+     /* align-self: initial; */
+     
+
+     /* para que no se altere el ancho y alto con el flex */
+     flex-shrink:0;
+}
+
+.footer{
+     color:white;
+     background-color: #1b2127;
+     display: flex;
+     align-items: center;
+     /* para colocar un elemento a la izquierda y otro a la derecha  */
+     justify-content: space-between;
+}
+.footer img{
+     /* alinear la imagen del foter */
+     vertical-align: middle
+}
+.footer a {
+     color: white;
+}
+
+.event-list{
+     display: flex;
+
+     /* para que despues de cierta cantidad no siga para la derecha, y baje, se debe heredar en container de la clase padre */
+     flex-wrap: wrap;
+}
+.event{
+     margin:10px;
+     width: 480px;
+     /* para que tome el tamaño que yo le de a todo lugar */
+     flex-shrink: 0;
+     border-radius: 10px;
+     /* para que no se desborden los bordes */
+     overflow: hidden; 
+     background: #f4fbff;
+}
+.event img{
+     width: 480px;
+     height: 200px;
+     /* esta propiedad es para que la imagen no se coloque recortada fea, o se achiquite si no para que se muestre una parte de ella respectiva al tamaño */
+     object-fit: cover;
+}
+
+.event-detail{
+     margin:20px 40px;
+     background-color: white;
+     /* para colocar el detalle encima de la imagen */
+     margin-top: -40px;
+     position: relative;
+     padding: 20px;
+     text-align: center;
+}
+.event-description{
+     text-align: left;
+}
+.event-url{
+     border: 1px solid;
+     padding: 5px 20px;
+     text-decoration: none;
+     color: #056fff;
+     border-radius: 5px;
+}
+.event-list-title{
+     margin-left: 20px;
+}
+.contact{
+     background-color: #056fff;
+     color:white;
+     height: 150px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.social{
+
+}
+
+.social-link{
+     display: inline-block;
+     width: 50px;
+     height: 50px;
+     margin: 0 10px;
+     /* para el formato svg */
+     background-size: 50px 50px;
+}
+
+.social-link.twitter{
+     background-image: url('../images/twitter.svg');
+}
+.social-link.facebook{
+     background-image: url('../images/facebook.svg');
+}
+.social-link.github{
+     background-image: url('../images/github.svg');
+}
+.social-link.instagram{
+     background-image: url('../images/instagram.svg');
+}
+
+.form-email input{
+     border-color: gray;
+     border-radius: 5px;
+     border-style: solid;
+     /* para jugar con la ubicacion del placeholder el text */
+     padding: 5px 20px 10px 25px;
+     background-image: url('../images/envelope.svg');
+     background-size: 15px 15px;
+     background-repeat: no-repeat;
+     background-position-y: center;
+     background-position-x: 5px;
+}
+
+.form-email button{
+     display: block;
+     margin-top: 10px;
+     background: transparent;
+     color: white;
+     padding: 10px 0px;
+     border-radius: 5px;
+     width: 100px;
+     margin-top: 10px;
+     /* margin: 10px auto 0; */
+}
+
+.form-email h3{
+     font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+     /* border: 1px solid red; */
+     width: 1000px;
+     /* centrar elemento */
+     margin: 0 auto;
+     /* que esto sea heredado de la clase padre */
+     display: inherit;
+     justify-content: inherit;
+     align-items: inherit;
+     height: inherit;
+     flex-wrap: inherit;
+}
