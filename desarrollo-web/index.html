@@ -11,6 +11,16 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <!-- estilos directamente en la clase si una caracteristica se sobreescribe debajo le dan mas importancia a esa, el orden importa, es orden de carga -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap">
+    <!-- para pantallas que sean de 768 px o menos, se aplicaran estos estilos 1 metodo -->
+    <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)" />
+
+    <!-- maneras de declarar los medias 3 metodo: -->
+    <style> @media screen and (max-width: 768px){
+        body{
+            border: 10px solid blue;
+        }
+    }
+    </style>
     <link rel="stylesheet" href="css/estilos.css">
     <!-- meta va a manipular el viewport, y  manipular el tamaño del content cuando se ve dentro del dispositivo -->
     <!-- device-width hace referencia a que detect el ancho del dispositivo y lo ejecute en ese valor -->
@@ -165,3 +175,4 @@
 </body>
 
 </html>
+

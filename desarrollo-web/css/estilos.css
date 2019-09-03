@@ -370,3 +370,11 @@ figure{
      height: inherit;
      flex-wrap: inherit;
 }
+
+/* MEDIA QUERYS */
+/* declaracion de los media querys para responsive 2 metodo */
+@media screen and (max-width: 768px){
+     body{
+          border: 10px solid yellow;
+     }
+}
