@@ -82,6 +82,8 @@ h2{
      display:flex;
      align-items: center;
      justify-content: space-between;
+     /* es importante aplicarlo para el responsive y que los atributos con display flex se adapten */
+     flex-wrap: wrap;
 
 }
 .hero-image{
@@ -106,7 +108,7 @@ h2{
      /* combinacion super para elementos en los extremos y alineados */
      align-items: center;
      justify-content: space-between;
-
+     flex-wrap: wrap;
      
 }
 .project-course{
@@ -149,9 +151,10 @@ h2{
      justify-content: space-between;
      /* alinear los items de manera horizontal */
      align-items: center;
-
      /* alto del header, para que la mano sirva en todo el largo para un item */
      height: 70px;
+     /* para que el menu baje de la parte horizontal para los que tienen flex */
+     flex-wrap: wrap;
 }
 ol,ul{
      margin: 0;
@@ -242,6 +245,7 @@ figure{
      align-items: center;
      /* para colocar un elemento a la izquierda y otro a la derecha  */
      justify-content: space-between;
+     flex-wrap: wrap;
 }
 .footer img{
      /* alinear la imagen del foter */
@@ -303,6 +307,8 @@ figure{
      display: flex;
      align-items: center;
      justify-content: space-between;
+     /* para que los elementos caigan en responsive */
+     flex-wrap: wrap;
 }
 .social{
 
@@ -360,7 +366,8 @@ figure{
 }
 .container{
      /* border: 1px solid red; */
-     width: 1000px;
+     /* tamaño maximo para el responsive */
+     max-width: 1000px;
      /* centrar elemento */
      margin: 0 auto;
      /* que esto sea heredado de la clase padre */
@@ -373,8 +380,22 @@ figure{
 
 /* MEDIA QUERYS */
 /* declaracion de los media querys para responsive 2 metodo */
+@media screen and (max-width: 1024px){
+
+
+}
+
 @media screen and (max-width: 768px){
-     body{
-          border: 10px solid yellow;
-     }
+     
+
+}
+
+@media screen and (max-width: 480px){
+     
+
+}
+
+@media screen and (max-width: 320px){
+     
+
 }
