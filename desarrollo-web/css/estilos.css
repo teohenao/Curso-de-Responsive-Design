@@ -368,6 +368,10 @@ figure{
      /* border: 1px solid red; */
      /* tamaño maximo para el responsive */
      max-width: 1000px;
+     /* ancho por defecto del 100% */
+     width: 100%;
+     /* mismo efecto del 100% pero mas perfeccionado, el toma el espacio disponible a lo largo,  lo usamos en el nav */
+     flex: 1;
      /* centrar elemento */
      margin: 0 auto;
      /* que esto sea heredado de la clase padre */
@@ -385,8 +389,29 @@ figure{
 
 }
 
-@media screen and (max-width: 768px){
-     
+/* los ipads tienen 767, entonces cuando deje de ser ipad, inicia con el otro */
+@media screen and (max-width: 767px){
+     .header{
+          /* para ubicar las letras abajo del tittle */
+          display: block;
+          /* modificamos el alto para que coja las letras */
+          height: auto;
+     }
+     .header ol{
+          /* la lista de menu se despliegue vertical */
+          display: block;
+     }
+     .header ol li{
+          height: 50px;
+     }
+     .header a{
+          /* centrar en todo el horizonal */
+          justify-content: center;
+     }
+     .header .logo{
+          /* para centrar el logo, se puede usar si tenemos una imagen y espacio disponible */
+          text-align: center;
+     }
 
 }
 
