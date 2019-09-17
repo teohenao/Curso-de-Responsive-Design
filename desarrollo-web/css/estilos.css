@@ -266,8 +266,8 @@ figure{
      flex-wrap: wrap;
 }
 .event{
-     margin:10px;
-     width: 480px;
+     margin:1%;
+     width: 48%;
      /* para que tome el tamaño que yo le de a todo lugar */
      flex-shrink: 0;
      border-radius: 10px;
@@ -453,6 +453,20 @@ figure{
      .project-course, .project-date, .project-url{
           margin: .3em 0;
      }
+     .event{
+          width: auto;
+          /* para que no exista el scroll */
+          flex-shrink: initial;
+     }
+     /* recordar la etiqueta tiene mas valor que una clase en css */
+     .event img {
+          width: 100%;
+
+      }
+      .event-detail {
+          margin: -2em .5em .5em ;
+          padding: 1em;
+      }
 
 }
 
