@@ -385,6 +385,10 @@ figure{
      height: inherit;
      flex-wrap: inherit;
 }
+.html-video{
+     width: 100%;
+     height: auto;
+}
 
 /* MEDIA QUERYS */
 /* declaracion de los media querys para responsive 2 metodo */
