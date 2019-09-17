@@ -392,12 +392,40 @@ figure{
      .container{
           padding: 1em 0;
      }
+     .hero{
+          height: auto;
+          position: relative;
+          /* ojo, superimportante para el desbordamiento de imagen, osea que la imagen de fondo tome el borde al que pertenece el padre con letras y todo*/
+          overflow: hidden;
+          padding: 2em;
+     }
+     h1{
+          font-size: 2em;
+          z-index: 2;
+     }
+     .hero-image{
+          /* colocamos eel elemento a volar, lo podemos colcar atras de algo etc  toda position
+          absolute debe estar relacionada a un padre de position relative*/
+          position: absolute;
+          /* con el index posicionamos */
+          z-index: 1;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          /* ancho del 100 porciento, estirado forzado */
+          width: 100%;
+
+
+     }
 
 
 }
 
 /* los ipads tienen 767, entonces cuando deje de ser ipad, inicia con el otro */
 @media screen and (max-width: 767px){
+
+     
      .header{
           /* para ubicar las letras abajo del tittle */
           display: block;
@@ -471,6 +499,9 @@ figure{
 }
 
 @media screen and (max-width: 480px){
+     h1{
+          font-size: 1.5em;
+     }
      .project-details{
           font-size: 12px;
      }
@@ -501,6 +532,13 @@ figure{
 }
 
 @media screen and (max-width: 320px){
+     h1{
+          font-size: 1.2em;
+          background: rgb(0, 0,5)
+     }
+     .hero{
+          padding: 2em  1em;
+     }
      
 
 }
